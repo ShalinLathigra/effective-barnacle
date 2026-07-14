@@ -3,9 +3,14 @@ cd ~
 
 # install build dependencies
 sudo apt update
-sudo apt install ncurses ninja-build gettext libtool libtool-bin autoconf automake cmake g++ pkg-config unzip curl doxygen wget fontconfig ffmpeg 7zip jq poppler fd rg fzf zoxide resvg ImageMagick lua5.1 libprotobuf-dev protobuf-compiler
+sudo apt install git ninja-build gettext libtool libtool-bin autoconf automake cmake g++ pkg-config unzip curl doxygen wget fontconfig ffmpeg 7zip jq fzf zoxide resvg lua5.1 libprotobuf-dev protobuf-compiler -y
 
-sudo apt-get install fd-find python3 luarocks pip tree-sitter-cli
+sudo apt-get install fd-find python3 luarocks pip tree-sitter-cli -y
+
+# git config
+
+git config --global user.name  "Shalin Lathigra"
+git config --global user.email shalinlathigra@gmail.com
 
 # FiraCode font install (possibly not needed)
 mkdir -p ~/.local/share/fonts
@@ -17,8 +22,8 @@ rm -rf font-tmp
 fc-cache -vf
 
 # tools install dir
-mkdir tools
-cd tools
+mkdir -p ~/tools
+cd ~/tools
 
 # neovim install
 git clone https://github.com/neovim/neovim.git
@@ -51,5 +56,13 @@ cd mosh
 ./autogen.sh
 ./configure
 make
+make install
+cd ..
+
+# tmux install 
+git clone https://github.com/tmux/tmux.git
+cd tmux
+sh autogen.sh
+./configure & make
 make install
 cd ..
