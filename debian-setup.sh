@@ -32,29 +32,8 @@ mkdir -p ~/.local/bin
 ln -sf "$(command -v fdfind)" ~/.local/bin/fd
 
 # ---------------------------------------------------------------------------
-# git config
+# Installing Tools!!!
 # ---------------------------------------------------------------------------
-git config --global user.name "Shalin Lathigra"
-git config --global user.email shalinlathigra@gmail.com
-
-# NOTE: Nerd Fonts (FiraCode) must be installed on the *Windows* side, since
-# Windows Terminal renders the text. Download FiraCode.zip from
-# https://github.com/ryanoasis/nerd-fonts/releases and install the .ttf
-# files in Windows (right-click -> Install), then select the font in your
-# terminal profile settings.
-
-# ---------------------------------------------------------------------------
-# dotfiles repo (setup script, neovim config, ...)
-# ---------------------------------------------------------------------------
-[ -d ~/effective-barnacle ] || git clone https://github.com/ShalinLathigra/effective-barnacle.git ~/effective-barnacle
-
-mkdir -p ~/.config
-if [ ! -e ~/.config/nvim ] || [ -L ~/.config/nvim ]; then
-  ln -sfn ~/effective-barnacle/nvim ~/.config/nvim
-else
-  echo "WARNING: ~/.config/nvim already exists and is not a symlink; leaving it untouched." >&2
-fi
-
 mkdir -p ~/tools
 
 # ---------------------------------------------------------------------------
