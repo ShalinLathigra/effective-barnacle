@@ -2,16 +2,6 @@ require("config.lazy")
 require("mason").setup()
 require("mason-lspconfig").setup {
 	ensure_installed = {
-		"bashls",
-		"clangd",
-		"gopls",
-		"htmx",
-		"lua_ls",
-		"marksman",
-		"neocmake",
-		"quick_lint_js",
-		"superhtml",
-		"ts_ls",
 	}
 }
 
