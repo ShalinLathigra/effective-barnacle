@@ -43,8 +43,8 @@
 [[/usr/local/src/tools/README.md]]
 
 - [x] Wallpaper cycler
-- [ ] Linux File Manager + Navigator
-- [ ] Password Manager
+- [x] Linux File Manager + Navigator
+- [x] Password Manager
 - [ ] something within  https://www.reddit.com/r/linux4noobs/comments/ejsz3v/still_on_windows_7_dont_want_windows_10_consider/
 - [ ] and something with awesome-console-services (chubin)
 - [ ] lolcat
@@ -59,8 +59,8 @@
 
 ### Password Management
 
-- [ ] KeePass equivalent, port over pwds
-- [ ] mpv (media player?)
+- [x] KeePass equivalent, port over pwds
+- [x] mpv (media player?)
 - [x] eza to test out vs ls
     - github.com/eza-community/eza
         - Configured, now it's at e, ea, el, ela, elt
@@ -79,12 +79,12 @@
 
 - [x] fff
     - [x] Requires additonal config in .bashrc or .fish when I settle on a thing
+- [x] yazi
 
 ### Web
 
 - [x] Firefox
 - [x] lynx
-- [x] w3m (to mess around with)
 - [x] edbrowse (hopefully for scripting)
     - [ ] Needs config in ~/.ebrc
 
