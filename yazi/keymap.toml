@@ -1,0 +1,4 @@
+[[mgr.prepend_keymap]]
+on   = "R"
+run  = "plugin autoplay"
+desc = "Toggle audio autoplay"
