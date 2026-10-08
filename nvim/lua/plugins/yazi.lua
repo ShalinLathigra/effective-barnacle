@@ -32,7 +32,7 @@ return {
     open_for_directories = false,
     keymaps = {
       show_help = "<f1>",
-      open_file_in_tab = "<S-t>"
+      open_file_in_tab = "<c-t>"
     },
   },
   -- 👇 if you use `open_for_directories=true`, this is recommended

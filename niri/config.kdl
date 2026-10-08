@@ -247,10 +247,12 @@ workspace "term"
 workspace "godot"
 
 window-rule {
-   match app-id=r#"^org\.godotengine\.Godot$"#
-   open-on-workspace "godot"
-}
-window-rule {
    match app-id=r#"firefox$"#
    open-on-workspace "web"
+}
+window-rule {
+   // match app-id=r#"^org\.godotengine\.Godot$"#
+   // match app-id=r#"^org\.godotengine\.Editor$"#
+   match app-id=r#"^org\.godotengine\..*$"#
+   open-on-workspace "godot"
 }
